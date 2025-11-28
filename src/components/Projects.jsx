@@ -2,12 +2,16 @@ import gsap from 'gsap';
 import { ExternalLink, Github } from 'lucide-react';
 import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
+import Gobus from "../assets/bus3.png";
 import nextCart from "../assets/cart.png";
 import EvntMngmnt from "../assets/databhd.png";
 import TalkMate from "../assets/image4.png";
+import OpportuniHubImage from "../assets/opr1.png";
+import SmartShrinkImage from "../assets/Screenshot 2025-05-18 145130.png";
 import SwasthySetu from "../assets/WhatsApp Image 2025-02-07 at 5.34.35 PM.jpeg";
 import AetherAi from "../assets/WhatsApp Image 2025-02-07 at 5.37.44 PM.jpeg";
 import SkyCast from "../assets/WhatsApp Image 2025-02-07 at 5.57.19 PM.jpeg";
+
 
 const projects = [
   {
@@ -17,6 +21,14 @@ const projects = [
     tags: ["React", "Node.js", "MongoDb", "Leaflet Api", "Gemini Api"],
     github: "#",
     live: "#"
+  },
+  {
+    title: "OpportuniHub – Empowering Students & Recruiters 🚀🎓",
+    description: "Built a full-stack SaaS platform for job matching, resume analysis, job alerts, and academic content sharing. Designed for students and recruiters to connect, collaborate, and grow.",
+    image: OpportuniHubImage, // replace with actual image import
+    tags: ["Next.js", "Node.js", "MongoDB", "JWT Auth", "SaaS", "Tailwind CSS"],
+    github: "#",  // link to GitHub repo if public
+    live: "#"     // link to live site
   },
   {
     title: "Aether AI – Your Intelligent Digital Assistant 🤖✨",
@@ -45,11 +57,20 @@ const projects = [
   {
     title: "GoBus - Real-Time Bus Tracking & Booking App 🚌📍",
     description: "Developed a real-time bus tracking and ticket booking application, allowing users to track buses on a live map, book tickets seamlessly, and receive real-time updates for a hassle-free travel experience.",
-    image: "https://ticketsmm.com/images/24_7/02.jpg",
+    image: Gobus,
     tags: ["Next.js", "Tailwind.css", "Express.js", "MongoDb", "Socket.io", "gsap"],
     github: "#",
     live: "#"
   },
+  {
+    title: "Smart Shrink – Intelligent File Compression System 📦⚡",
+    description: "Engineered a smart content delivery feature that drastically reduces file sizes (notes, videos, docs) before download, ensuring faster access and lower bandwidth usage for students.",
+    image: SmartShrinkImage, // replace with actual image import
+    tags: ["Next.js", "Node.js", "Compression", "Cloud Storage", "Student SaaS"],
+    github: "#",  // link to GitHub repo if public
+    live: "#"     // link to live site or demo
+  },
+
   {
     title: "Online Event Management – Streamline & Elevate Your Events 🎉📅",
     description: "Built a comprehensive event management platform enabling users to create, manage, and book events seamlessly. Integrated real-time notifications, ticketing system, and user authentication for a smooth experience.",
@@ -138,7 +159,7 @@ const Projects = () => {
         {/* Centered Button for More Projects */}
         <div className="flex justify-center mt-12">
           <a
-            href="https://github.com/your-github"
+            href="https://github.com/omprakash447"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-6 py-3 text-lg font-semibold text-white bg-primary rounded-lg hover:bg-primary/80 transition duration-300"
